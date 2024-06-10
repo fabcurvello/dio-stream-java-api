@@ -11,20 +11,25 @@ import java.util.function.Consumer;
     retornar um valor.
  */
 
-public class ConsumerExample {
+public class ConsumerExample2 {
     public static void main(String[] args) {
         //Criar uma lista de números inteiros
         List<Integer> numeros = Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        //Usar o Consumer com expressão lambda para imprimir número par
-        Consumer<Integer> imprimirNumeroPar = numero -> {
-            if (numero % 2 == 0) {
-                System.out.println(numero);
+        //Usar o Consumer com uma classe anônima para imprimir número par
+        Consumer<Integer> imprimirNumeroPar = new Consumer<Integer>() {
+            @Override
+            public void accept(Integer numero) {
+                if (numero % 2 == 0) {
+                    System.out.println(numero);
+                }
             }
         };
 
-        //Usar o Consummer para imprimir números pares no Stream
-        numeros.stream().forEach(imprimirNumeroPar);
+        //Usar o Consummer para imprimir números pares
+        for (Integer numero : numeros) {
+            imprimirNumeroPar.accept(numero);
+        }
     }
 
 }
