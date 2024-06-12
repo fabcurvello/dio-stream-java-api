@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
     os números pares e outra contendo os números ímpares da lista original, e exiba os
     resultados no console.
 
-
 */
 public class Desafio16 {
 
