@@ -1,9 +1,7 @@
 package functional_interface.desafios;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /*
     Vamos praticar e aprofundar nossos conhecimentos na poderosa Stream API do Java!
