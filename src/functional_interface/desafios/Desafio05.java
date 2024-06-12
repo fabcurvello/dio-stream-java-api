@@ -1,6 +1,5 @@
 package functional_interface.desafios;
 
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,7 +14,6 @@ import java.util.List;
 
     Desafio 5 - Calcule a média dos números maiores que 5:
     Com a Stream API, calcule a média dos números maiores que 5 e exiba o resultado no console.
-
 */
 public class Desafio05 {
 
