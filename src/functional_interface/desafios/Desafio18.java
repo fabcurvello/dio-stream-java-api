@@ -1,6 +1,5 @@
 package functional_interface.desafios;
 
-
 import java.util.Arrays;
 import java.util.List;
 
